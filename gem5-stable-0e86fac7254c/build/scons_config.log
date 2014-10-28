@@ -1,0 +1,285 @@
+file /home/emily/Desktop/Benchmarking/a4/gem5-stable-0e86fac7254c/SConstruct,line 814:
+	Configure(confdir = build/.scons_config)
+scons: Configure: Checking for leading underscore in global variables...
+build/.scons_config/conftest_0.c <-
+  |
+  |        asm(".globl _x; _x: .byte 0");
+  |        extern int x;
+  |        int main() { return x; }
+  |        
+(B[m [      CC] [33m.scons_config/conftest_0[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_0(B[m
+build/.scons_config/conftest_0.o: In function `main':
+conftest_0.c:(.text+0x7): undefined reference to `x'
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C header file Python.h... 
+build/.scons_config/conftest_1.c <-
+  |
+  |#include <Python.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_1[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library pthread... 
+build/.scons_config/conftest_2.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_2[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_2(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library dl... 
+build/.scons_config/conftest_3.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_3[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_3(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library util... 
+build/.scons_config/conftest_4.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_4[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_4(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library m... 
+build/.scons_config/conftest_5.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_5[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_5(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library python2.7... 
+build/.scons_config/conftest_6.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_6[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_6(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for accept(0,0,0) in C++ library None... 
+build/.scons_config/conftest_7.cpp <-
+  |
+  |
+  |#include "sys/socket.h"
+  |
+  |int
+  |main() {
+  |  accept(0,0,0);
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_7[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_7(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for zlibVersion() in C++ library z... 
+build/.scons_config/conftest_8.cpp <-
+  |
+  |
+  |#include "zlib.h"
+  |
+  |int
+  |main() {
+  |  zlibVersion();
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_8[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_8(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for GOOGLE_PROTOBUF_VERIFY_VERSION in C++ library protobuf... 
+build/.scons_config/conftest_9.cpp <-
+  |
+  |
+  |#include "google/protobuf/message.h"
+  |
+  |int
+  |main() {
+  |  GOOGLE_PROTOBUF_VERIFY_VERSION;
+  |return 0;
+  |}
+  |
+(B[m [     CXX] [33m.scons_config/conftest_9[33m[1m.cpp[34m[1m -> [33m[1m.o(B[m
+build/.scons_config/conftest_9.cpp:3:37: fatal error: google/protobuf/message.h: No such file or directory
+ #include "google/protobuf/message.h"
+                                     ^
+compilation terminated.
+scons: Configure: no
+
+scons: Configure: Checking for clock_nanosleep(0,0,NULL,NULL) in C library None... 
+build/.scons_config/conftest_10.c <-
+  |
+  |
+  |#include "time.h"
+  |
+  |int
+  |main() {
+  |  clock_nanosleep(0,0,NULL,NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_10[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_10(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library None... 
+build/.scons_config/conftest_11.c <-
+  |
+  |
+  |#include "time.h"
+  |#include "signal.h"
+  |
+  |int
+  |main() {
+  |  timer_create(CLOCK_MONOTONIC, NULL, NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_11[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_11(B[m
+build/.scons_config/conftest_11.o: In function `main':
+conftest_11.c:(.text+0x14): undefined reference to `timer_create'
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for timer_create(CLOCK_MONOTONIC, NULL, NULL) in C library rt... 
+build/.scons_config/conftest_12.c <-
+  |
+  |
+  |#include "time.h"
+  |#include "signal.h"
+  |
+  |int
+  |main() {
+  |  timer_create(CLOCK_MONOTONIC, NULL, NULL);
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_12[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_12(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C library tcmalloc... 
+build/.scons_config/conftest_13.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_13[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_13(B[m
+/usr/bin/ld: cannot find -ltcmalloc
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C library tcmalloc_minimal... 
+build/.scons_config/conftest_14.c <-
+  |
+  |
+  |
+  |int
+  |main() {
+  |  
+  |return 0;
+  |}
+  |
+(B[m [      CC] [33m.scons_config/conftest_14[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_14(B[m
+/usr/bin/ld: cannot find -ltcmalloc_minimal
+collect2: error: ld returned 1 exit status
+scons: Configure: no
+
+scons: Configure: Checking for C header file fenv.h... 
+build/.scons_config/conftest_15.c <-
+  |
+  |#include <fenv.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_15[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking for C header file linux/kvm.h... 
+build/.scons_config/conftest_16.c <-
+  |
+  |#include <linux/kvm.h>
+  |
+  |
+(B[m [      CC] [33m.scons_config/conftest_16[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+scons: Configure: Checking size of struct kvm_xsave ... 
+build/.scons_config/conftest_17.c <-
+  |#include <linux/kvm.h>
+  |#include <stdlib.h>
+  |#include <stdio.h>
+  |int main() {
+  |    printf("%d", (int)sizeof(struct kvm_xsave));
+  |    return 0;
+  |}
+  |    
+(B[m [      CC] [33m.scons_config/conftest_17[33m[1m.c[34m[1m -> [33m[1m.o(B[m
+(B[m [    LINK] [33m[33m[1m[34m[1m -> [33m[1m.scons_config/conftest_17(B[m
+build/.scons_config/conftest_17 > build/.scons_config/conftest_17.out
+scons: Configure: yes
+
+scons: Configure: Checking for member exclude_host in struct perf_event_attr...
+build/.scons_config/conftest_18.cc <-
+  |
+  |#include <linux/perf_event.h>
+  |int main(){
+  |  struct perf_event_attr test;
+  |  (void)test.exclude_host;
+  |  return 0;
+  |};
+  |
+(B[m [     CXX] [33m.scons_config/conftest_18[33m[1m.cc[34m[1m -> [33m[1m.o(B[m
+scons: Configure: yes
+
+
