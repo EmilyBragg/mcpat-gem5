@@ -1,0 +1,100 @@
+what happened? 1e-6
+what happened? 1e12
+    <param name="target_core_clockrate" value="1000"/><!--MHz -->
+    <stat name="total_cycles" value="1066605867"/>
+    <stat name="idle_cycles" value="48834"/>
+    <stat name="busy_cycles"  value="1066557033"/>
+what happened? 1e-6
+what happened? 1e12
+      <param name="clock_rate" value="1000"/>
+      <param name="number_hardware_threads" value="1"/>
+      <param name="fetch_width" value="8"/>
+      <param name="decode_width" value="8"/>
+      <param name="issue_width" value="8"/>
+      <param name="peak_issue_width" value="8"/>
+      <param name="commit_width" value="8"/>
+      <param name="instruction_window_size" value="64"/>
+      <param name="fp_instruction_window_size" value="64"/>
+      <param name="ROB_size" value="192"/>
+      <param name="phy_Regs_IRF_size" value="256"/>
+      <param name="phy_Regs_FRF_size" value="256"/>
+      <param name="store_buffer_size" value="32"/>
+      <param name="load_buffer_size" value="32"/>	
+      <param name="RAS_size" value="16"/>						
+      <stat name="total_instructions" value="2161326070"/>
+      <stat name="int_instructions" value="1387984468"/>
+      <stat name="fp_instructions" value="1046"/>
+      <stat name="branch_instructions" value="150514365"/>
+      <stat name="branch_mispredictions" value="2277308"/>
+      <stat name="load_instructions" value="513397262"/>
+      <stat name="store_instructions" value="259943294"/>
+      <stat name="committed_instructions" value="2091471065"/>
+      <stat name="committed_int_instructions" value="2091469479"/>
+      <stat name="committed_fp_instructions" value="1518"/>
+      <stat name="total_cycles" value="1066605867"/>
+      <stat name="idle_cycles" value="48834"/>
+      <stat name="busy_cycles" value="1066557033"/>
+      <stat name="ROB_reads" value="3183980420"/>
+      <stat name="ROB_writes" value="4458595098"/>
+      <stat name="rename_reads" value="3593330126"/> <!--lookup in renaming logic -->
+      <stat name="rename_writes" value="1797914339"/><!--update dest regs. renaming logic -->
+      <stat name="fp_rename_reads" value="2586"/>
+      <stat name="fp_rename_writes" value="1293"/>
+      <stat name="inst_window_reads" value="5392698596"/>
+      <stat name="inst_window_writes" value="2349904951"/>
+      <stat name="inst_window_wakeup_accesses" value="2155310592"/>
+      <stat name="fp_inst_window_reads" value="3333"/>
+      <stat name="fp_inst_window_writes" value="1886"/>
+      <stat name="fp_inst_window_wakeup_accesses" value="1591"/>
+      <stat name="int_regfile_reads" value="3422066734"/>
+      <stat name="float_regfile_reads" value="2359"/>
+      <stat name="int_regfile_writes" value="1756330047"/>
+      <stat name="float_regfile_writes" value="1085"/>
+      <stat name="function_calls" value="15750659"/>
+      <stat name="context_switches" value="23"/>
+      <stat name="ialu_accesses" value="2164798101"/>			
+      <stat name="fpu_accesses" value="1694"/>
+	<param name="number_entries" value="64"/>
+	<stat name="total_accesses" value="0"/>
+	<stat name="total_misses" value="0"/>
+what happened? 1
+what happened? 1
+what happened? 0
+	<param name="icache_config" value="32768,64,2,1,1,2,64,0"/>
+	<param name="buffer_sizes" value="4,4,4,4"/>
+	<stat name="read_accesses" value="180177959"/>
+	<stat name="read_misses" value="1286"/>
+	<stat name="conflicts" value="545"/>				
+	<param name="number_entries" value="64"/><!--dual threads-->
+	<stat name="total_accesses" value="0"/>
+	<stat name="total_misses" value="0"/>
+what happened? 1
+what happened? 1
+what happened? 0
+	<param name="dcache_config" value="65536,64,2,1,1,2,64,0"/>
+	<param name="buffer_sizes" value="4,4,4,4"/>
+	<stat name="read_accesses" value="186623427"/>
+	<stat name="write_accesses" value="255382925"/>
+	<stat name="read_misses" value="301"/>
+	<stat name="write_misses" value="121"/>
+	<stat name="conflicts" value="1"/>	
+	<stat name="read_accesses" value="87194808"/> <!--See IFU code for guideline -->
+	<stat name="write_accesses" value="138947489"/>
+what happened? 1
+what happened? 1
+what happened? 1
+      <param name="L2_config" value="2097152,64,8,1,1,20,64,1"/>
+      <param name="buffer_sizes" value="20,20,20,20"/>
+what happened? 1e-6
+what happened? 1e-12
+      <param name="clockrate" value="1000"/>
+      <stat name="read_accesses" value="1157"/>
+      <stat name="write_accesses" value="120"/>
+      <stat name="read_misses" value="838"/>
+      <stat name="write_misses" value="120"/>
+      <stat name="conflicts" value="0"/>	
+what happened? 2
+	   <stat name="total_accesses" value="2554"/>
+      <stat name="memory_accesses" value="958"/>
+      <stat name="memory_reads" value="838"/>
+      <stat name="memory_writes" value="120"/>
